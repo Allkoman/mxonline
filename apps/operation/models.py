@@ -21,7 +21,7 @@ class UserAsk(models.Model):
         verbose_name_plural = verbose_name
 
 
-class CouserComments(models.Model):
+class CourseComments(models.Model):
     "课程评论"
     user = models.ForeignKey(UserProfile, verbose_name=u"用户名")
     course = models.ForeignKey(Course, verbose_name=u"课程")
